@@ -1,54 +1,195 @@
-h1 {
-    font-size: 2.5rem; /* Tamanho da fonte */
-    color: #222831; /* Cor do texto */
-    text-align: center; /* Alinha o texto ao centro */
-    letter-spacing: 0.4rem; /* Espaçamento entre letras */
+*{
+    margin: 0px;
+    padding: 0px;
 }
 
+/* Estilos para o corpo da página */
+body {
+    background: linear-gradient(135deg, #020a1d, #00c48a); 
+    color: #fff; 
+    font-family: Arial, sans-serif;
+    margin: 0; 
+    padding: 0; 
+}
+
+/* Estilos para o cabeçalho */
+header h1 {
+    font-size: 2.5rem; 
+    color: #ffffff; 
+    text-align: center; 
+    letter-spacing: 0.4rem; 
+    padding-top: 50px;
+    margin-bottom: 2rem; 
+}
+
+/* Estilos gerais para as seções */
 section {
-    display: flex; /* Usa Flexbox para layout */
-    flex-direction: column; /* Alinha os itens na vertical */
-    align-items: center; /* Centraliza os itens horizontalmente */
-    margin-bottom: 3rem; /* Espaçamento abaixo de cada seção */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    margin-bottom: 3rem; 
 }
 
-section input {
-    width: 30rem; /* Largura dos inputs */
-    border: none; /* Remove a borda padrão */
-    padding: 1rem; /* Espaçamento interno */
-    border-radius: 1.5rem; /* Borda arredondada */
-    margin-bottom: 1rem; /* Espaçamento abaixo dos inputs */
-    color: #45474B; /* Cor do texto */
-    font-size: 1rem; /* Tamanho da fonte */
-    box-sizing: border-box; /* Inclui padding e border na largura total */
+/* Estilos para o campo de pesquisa */
+#search-section input {
+    width: 30rem; 
+    border: 1px solid #00c48a; 
+    padding: 1rem; 
+    border-radius: 1.5rem; 
+    margin-bottom: 1rem; 
+    color: #333; 
+    font-size: 1rem;
+    box-sizing: border-box;
 }
 
-/* Estiliza os botões dentro das seções */
-section button {
-    padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
-    border: none; /* Remove a borda padrão */
-    border-radius: 1.5rem; /* Borda arredondada */
-    background-color: #6600ff81; /* Cor de fundo do botão */
-    color: #ffffff; /* Cor do texto do botão */
-    font-size: 1rem; /* Tamanho da fonte */
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+#search-section button {
+    padding: 0.8rem 1.2rem; 
+    border: none; 
+    border-radius: 1.5rem; 
+    background-color: #00c48a; 
+    color: #ffffff; 
+    font-size: 1rem; 
+    cursor: pointer;
 }
 
 /* Adiciona efeito hover ao botão de pesquisa */
-section button:hover {
-    background-color: #6600ff; /* Muda a cor de fundo ao passar o mouse */
-    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
+#search-section button:hover {
+    background-color: #021238;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2); 
+}
+/* Estilos para os botões de tópicos */
+#buttons-section {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    margin-bottom: 20px;
 }
 
-.slider {
-    border-radius: 1em;
-    width: 755px;
-    height: 400px;
+#buttons-section button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    background-color: #021238;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#buttons-section button:hover {
+    background-color: #00c48a; 
+}
+
+#results {
+    margin: 0px;
+}
+
+/* Estilos para os cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.card-primeiro {
+    margin: 10px;
+    width: 300px; 
+    border: 1px solid #ccc;
+    border-radius: 8px;
     overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-  
-.slide {
-   
 
-    transition: left 0.5s ease-in-out;
+.card-segundo {
+    padding: 15px;
+}
+
+.card-segundo img {
+    width: 100%; 
+    height: auto;
+}
+
+.card-segundo .texto {
+    margin-top: 10px;
+}
+
+.card-segundo .texto a {
+    display: block;
+    color: #004dff; 
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.card-segundo .texto a:hover {
+    text-decoration: underline;
+}
+
+.votos {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contador {
+    font-size: 1rem;
+    color: #333;
+}
+
+.votar {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.votar:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para o contêiner do vencedor */
+.winner {
+    border: 2px solid #4CAF50; 
+    border-radius: 10px; 
+    padding: 20px; 
+    margin: 20px auto; 
+    max-width: 600px; 
+    text-align: center; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.winner h2 {
+    font-size: 2rem; 
+    color: #333; 
+}
+
+.winner img {
+    width: 100%; 
+    max-width: 400px;
+    height: auto; 
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.winner p {
+    font-size: 1rem;
+    color: #666; 
+    line-height: 1.5; 
+    margin: 10px 0;
+}
+
+.winner a {
+    display: inline-block; 
+    margin: 10px; 
+    color: #4CAF50; 
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+.winner a:hover {
+    text-decoration: underline;
 }

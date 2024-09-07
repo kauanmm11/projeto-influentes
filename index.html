@@ -7,35 +7,26 @@
     <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
-    <header>
-        <h1>MultiTalentos</h1>
-    </header>
-    <main>
-        
-        <section>
-            <input type="text" name="nome" id="inome" placeholder="Digite um tópico">
-            <button onclick="pesquisar()">Pesquisa</button>
-        </section>
+<header>
+    <h1>MultiTalentos</h1>
+</header>
 
-        <section id="imagens-slider">
-            <div class="slider">
-                <div class="slide">
-                    <img src="imagens/alanzoka.jpg" alt="imagen do Alanzoka">
-                </div>
-                <div class="slide">
-                    <img src="imagens/yoda.png" alt="imagen do Yoda">
-                </div>
-                <div class="slide">
-                   <img src="imagens/rakin.png" alt="imagen do Rakin">
-                </div>
-            </div>
-        </section>
+<main>
+    <section id="buttons-section">
+        <!-- Botões de tópicos serão inseridos aqui -->
+    </section>
 
-    </main>
-    <footer>
+    <section id="search-section">
+        <input type="text" name="nome" id="inome" placeholder="Digite um tópico">
+        <button id="search-button">Pesquisar</button>
+    </section>
 
-    </footer>
-    <script src="app.js"></script>
-    <script src="dados.js"></script>
+    <section id="results">
+        <!-- Tópicos e cards serão inseridos aqui -->
+    </section>
+</main>
+
+<script src="dados.js"></script>
+
 </body>
 </html>
