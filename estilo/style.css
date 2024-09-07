@@ -149,3 +149,45 @@ section {
 .votar:hover {
     background-color: #0056b3;
 }
+
+/* Consulta de mídia para dispositivos móveis */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-primeiro {
+        width: 80%;
+    }
+
+    .search-section, .buttons-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-primeiro {
+        width: 100%;
+    }
+
+    .search-section, .buttons-section {
+        width: 100%;
+    }
+
+    button {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
