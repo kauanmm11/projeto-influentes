@@ -1,5 +1,5 @@
 # projeto-influentes
- Criando o Meu Projeto do evento Imerão-Gemini
+ Criando o Meu Projeto do evento Imersão-Gemini
 
  # Sistema de Votação de Personalidades
 
